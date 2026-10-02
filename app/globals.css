@@ -91,3 +91,6 @@ h1 .edition{font-family:inherit;font-weight:500;font-size:10px;letter-spacing:.0
 .top-actions .lang-toggle{min-width:44px;justify-content:center;font-weight:500;letter-spacing:.02em}
 .structure-english{margin:6px 0 0;font-size:13px;color:#87929d;text-transform:capitalize}
 :lang(zh-CN) .eyebrow,:lang(zh-CN) .scene-caption{letter-spacing:.12em}
+/* Base UI marks the slider with data-orientation, so the track's data-horizontal:h-1 never applies */
+[data-slot=slider-track][data-orientation=horizontal]{height:4px;width:100%}
+[data-slot=slider-range][data-orientation=horizontal]{height:100%}
